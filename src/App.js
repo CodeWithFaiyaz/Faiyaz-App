@@ -5,7 +5,7 @@ import MyForm from "./Compotent/MyForm";
 import About from "./Compotent/About";
 import React, { useState } from "react";
 import Alert from "./Compotent/Alert";
-import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+// import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 // import { Switch, Route, Link, Router,Link} from "react-router-dom";
 
 function App() {
@@ -49,19 +49,19 @@ function App() {
         <Navbar title="Ayan" home="Text" mode={mode} change={changeMode} />
         <Alert arror={alert} />
         <div className="container mt-5">
-          <Router>
+          {/* <Router>
             <Routes>
             <Route exact path="/about" element={<About/>}/>
             <Route exact path="/myform" element={<MyForm heading="Text Faiyaz" arror={show}/>}/>
              
             </Routes>
           </Router>
-
-
+ */}
+   <MyForm heading="Text Content " arror={show} />
         </div>
 
         {/* <About /> */}
-      {/* <MyForm heading="Text Content " arror={show} /> */}
+  
     </>
   );
 }
